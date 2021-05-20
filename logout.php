@@ -1,1 +1,0 @@
-<!--logout with button sending user back to login index page-->

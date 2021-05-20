@@ -14,7 +14,7 @@
 <div class="container">
 	<h1>Welcome To Developing Software Introduction</h1><hr>
 		<h2>Login</h2>
-			<form name="entry" method="POST" action="cookie_set.php">
+			<form name="entry" method="POST" action="index.php?action=login">
 			  
 				<div class="form-group">
 			       <label for="name">Name : </label>
@@ -25,8 +25,11 @@
 				  <input type="password" name="pass" class="form-control" placeholder="Your Password *"required>
 			    </div>
 				<div class="form-group">
-				   <input type="submit" class="btn btn-primary" value="Log In">
-			  
+				<div>
+					<?php echo $loginError ?>
+				</div>
+				<input type="submit" class="btn btn-primary" value="Log In">
+				</div>
 			</form> 
 </div>
 </body>
