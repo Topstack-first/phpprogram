@@ -1,3 +1,5 @@
 <?php
 $loginError = "";
+$staffName = "";
+$factorialResult = "";
 ?>

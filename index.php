@@ -2,6 +2,8 @@
     include 'global.php';
     include 'functions.php';
 
+    $loginResult = false;
+    $action = "";
     if(isset($_GET['action']))
     {
         $action = $_GET['action'];
@@ -11,11 +13,23 @@
         }
         else if($action == "login")
         {
-            $result = login();
-            if($result != true)
+            $loginResult = login();
+
+            if($loginResult != true)
             {
-                $loginError = $result;
+                $loginError = $loginResult;
             }
+            else{
+                header('Location: index.php') ;
+            }
+        }
+        else if($action == "staff")
+        {
+            $staffName = generateUsername();
+        }
+        else if($action == "factorial")
+        {
+            $factorialResult = getCalculatedFactorialString();
         }
     }
     //check if the administrator is logged on

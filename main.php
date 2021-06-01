@@ -10,12 +10,12 @@
     <title>PHP Assessment</title>
 </head>
 
-<body>
+<body class="main-background">
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">Welcome <?php echo getUsername() ?>!</h1>
     </div>
-    <hr>
+
     <br>
     <div class="container">
         <div class="card-deck mb-3 text-center">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="card-body">
                     <h1 class="card-title pricing-card-title"></h1>
-                    <a class="nav-item nav-link btn btn-lg btn-block btn-outline-primary" href="index.php?action=staff">
+                    <a class="nav-item nav-link btn btn-lg btn-block btn-primary" href="index.php?action=staff">
                         Generate a Staff
                     </a>
                 </div>
@@ -65,14 +65,7 @@
             }
             ?>
         </div>
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                    <small class="d-block mb-3 text-muted">Parissa Lebaschi EC1961382</small>
-                </div>
-            </div>
-        </footer>
+        
     </div>
 </body>
 
