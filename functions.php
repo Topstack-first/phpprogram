@@ -116,6 +116,7 @@ function generateUsername()
     {
         $firstName = $_POST['first_name'];
         $lastName = $_POST['last_name'];
+	$fullName = $firstName."".$lastName;
 
         //get first character of first name
         $firstName = substr($firstName,0,1);
